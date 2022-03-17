@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicersity website Project in html and CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(12, 13, 18, 0.88), rgb(3 46 10 / 61%)), url(img/header-bg.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* .header{
+    background: url(img/header-bg.jpg);  
+  }
+  .head{
+      min-height: 100vh;
+      width: 100%;
+      background: rgba(10, 26, 116, 0.61) ;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+  }
+*/
+
+        nav {
+            display: flex;
+            padding: 2% 4%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            width: 180px;
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .nav-links ul li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #22b14c;
+            font-weight: bold;
+        }
+
+        .nav-links ul li::after {
+            content: "";
+            width: 0px;
+            height: 2px;
+            background: rgb(255, 255, 255);
+            display: block;
+            margin: auto;
+            transition: .5s;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <div class="head"></div>
+        <nav>
+            <a href="index.html"><img src="img/Logo-PNG.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Blog</a> </li>
+                    <li><a href="#">Services</a> </li>
+                    <li><a href="#">Course</a> </li>
+                    <li><a href="#">About us</a> </li>
+                    <li><a href="#">Congtact</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+</body>
+
+</html>
